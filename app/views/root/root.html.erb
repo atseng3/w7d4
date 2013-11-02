@@ -1,0 +1,13 @@
+<h1> Title of Our APP </h1>
+
+<div class="content"></div>
+
+<script>
+<% if current_user %>
+  window.userId = parseInt("<%= current_user.id %>");
+<% else %>
+  window.userId = undefined;
+<% end %>
+</script>
+
+
